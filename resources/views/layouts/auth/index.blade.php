@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-    <title>Login &mdash; Stisla</title>
+    <title>Login &mdash; Informatika UNBI</title>
 
     <!-- General CSS Files -->
     <link rel="stylesheet" href="{{ asset('dashboard-assets/modules/bootstrap/css/bootstrap.min.css') }}">
@@ -24,13 +24,16 @@
                     <div class="card-header"><h4>Login</h4></div>
 
                     <div class="card-body">
-                        <form method="POST" action="#" class="needs-validation" novalidate="">
+                        <form method="POST" action="{{ route('login') }}" class="needs-validation" novalidate="">
+                            @csrf
                             <div class="form-group">
                                 <label for="username">Username</label>
-                                <input id="username" type="username" class="form-control" name="username" tabindex="1" required autofocus>
-                                <div class="invalid-feedback">
-                                    Please fill in your username
-                                </div>
+                                <input id="username" type="username" value="{{ old('username') }}" class="form-control  @error('username') is-invalid @enderror" name="username" tabindex="1" required autofocus>
+                                @error('username')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
                             </div>
 
                             <div class="form-group">
@@ -42,10 +45,12 @@
                                     </a>
                                     </div>
                                 </div>
-                                <input id="password" type="password" class="form-control" name="password" tabindex="2" required>
-                                <div class="invalid-feedback">
-                                    please fill in your password
-                                </div>
+                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" tabindex="2" required>
+                                @error('password')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
                             </div>
                             <div class="form-group">
                                 <button type="submit" class="btn btn-primary btn-lg btn-block" tabindex="4">

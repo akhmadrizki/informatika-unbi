@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-    <title>{{ $title }} | Informatika UNBI</title>
+    <title>{{ $title }} &mdash; Informatika UNBI</title>
 
     <!-- General CSS Files -->
     <link rel="stylesheet" href="{{ asset('dashboard-assets/modules/bootstrap/css/bootstrap.min.css') }}">
@@ -27,7 +27,17 @@
             <!-- Main Content -->
             <div class="main-content">
                 <section class="section">
-                    {{ $slot }}
+                    <div class="section-header">
+                        <h1>{{ $header }}</h1>
+
+                        @if (isset($breadcrumbs))
+                            {{ $breadcrumbs }}
+                        @endif
+                    </div>
+
+                    <div class="section-body">
+                        {{ $slot }}
+                    </div>
                 </section>
             </div>
 

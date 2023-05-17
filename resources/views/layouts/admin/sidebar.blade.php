@@ -32,5 +32,12 @@
                 <i class="far fa-newspaper"></i> <span>Berita</span>
             </a>
         </li>
+
+        <li class="menu-header">Administrator</li>
+        <li class="">
+            <a class="nav-link" href="#">
+                <i class="fas fa-user-secret"></i> <span>Admin</span>
+            </a>
+        </li>
     </ul>
 </aside>

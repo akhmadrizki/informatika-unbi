@@ -29,5 +29,6 @@ class AppServiceProvider extends ServiceProvider
     public function mapBladeComponents(): void
     {
         Blade::componentNamespace('App\View\Components\Admin', 'admin');
+        Blade::componentNamespace('App\View\Components\Client', 'client');
     }
 }

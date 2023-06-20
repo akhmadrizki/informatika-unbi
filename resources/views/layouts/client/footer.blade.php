@@ -4,14 +4,14 @@
         <div class="container">
             <div class="row">
 
-            <div class="col-lg-3 col-md-6 footer-contact">
+            <div class="col-lg-4 col-md-6 footer-contact">
                 <h3>Universitas Bali Internasional</h3>
                 <p>
                 Denpasar <br>
                 Jl. Seroja, Gang Jeruk, Kelurahan Tonja Denpasar Utara, Bali 80239<br><br>
                 <strong>Phone:</strong> (0361) 4747770<br>
                 <strong>Mobile:</strong> (+62) 81238978886 / 85924124866<br>
-                <strong>Email:</strong> info@example.com<br>
+                <strong>Email:</strong> universitasbaliinternasional@gmail.com<br>
                 </p>
             </div>
 
@@ -37,7 +37,7 @@
                 </ul>
             </div>
 
-            <div class="col-lg-3 col-md-6 footer-links">
+            <div class="col-lg-2 col-md-6 footer-links">
                 <h4></h4>
                 <ul>
                     <li><i class="bx bx-chevron-right"></i> <a href="#">Hukum (S1)</a></li>
@@ -52,7 +52,7 @@
         </div>
     </div>
 
-    <div class="container d-md-flex py-4">
+    <div class="container d-md-flex footer-padding">
         <div class="me-md-auto text-center text-md-start">
             <div class="copyright">
                 {{ date('Y') }} &copy; Copyright <strong><span>Informatika UNBI</span></strong>. All Rights Reserved

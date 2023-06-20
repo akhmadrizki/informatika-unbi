@@ -9,9 +9,12 @@
         </a>
 
         <nav id="navbar" class="navbar order-last order-lg-0">
+            @php
+                $route = Request::route()->getName();
+            @endphp
             <ul>
-            <li><a class="active" href="index.html">Beranda</a></li>
-            <li><a href="about.html">Tentang Kampus</a></li>
+            <li><a class="{{ $route == 'index' ? 'active' : null }}" href="{{ route('index') }}">Beranda</a></li>
+            <li><a class="{{ $route == 'about' ? 'active' : null }}" href="{{ route('about') }}">Tentang Kampus</a></li>
             <li><a href="pricing.html">Biaya</a></li>
             <li><a href="contact.html">Hubungi Kami</a></li>
             </ul>

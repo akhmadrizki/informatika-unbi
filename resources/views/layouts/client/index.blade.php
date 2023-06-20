@@ -44,15 +44,6 @@
     @include('layouts.client.navigation')
   <!-- End Header -->
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex justify-content-center align-items-center">
-    <div class="container position-relative" data-aos="zoom-in" data-aos-delay="100">
-      <h1 class="text-capitalize">Transformasi digital<br>melalui keahlian Teknologi</h1>
-      <h2>Menjelajahi, Mencipta, Mendominasi !</h2>
-      <a href="courses.html" class="btn-get-started">Gabung Bersama Informatika UNBI</a>
-    </div>
-  </section><!-- End Hero -->
-
   <main id="main">
     {{ $slot }}
     <!-- ======= Popular Courses Section ======= -->

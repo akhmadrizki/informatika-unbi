@@ -48,14 +48,36 @@ h6 {
   bottom: 15px;
   z-index: 996;
   background: #ffb901;
-  padding: 16px 18px;
+  padding: 14px 18px;
   border-radius: 28px 28px 2px 28px;
   transition: all 0.4s;
   font-weight: 700;
 }
 
+@media (min-width: 992px) {
+  .back-to-top {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 15px;
+    bottom: 15px;
+    z-index: 996;
+    background: #ffb901;
+    padding: 16px 18px;
+    border-radius: 28px 28px 2px 28px;
+    transition: all 0.4s;
+    font-weight: 700;
+  }
+
+  .back-to-top i {
+      font-size: 28px;
+      color: #673ab7;
+      line-height: 0;
+  }
+}
+
 .back-to-top i {
-  font-size: 28px;
+  font-size: 20px;
   color: #673ab7;
   line-height: 0;
 }
@@ -1574,6 +1596,17 @@ section {
   text-decoration: none;
 }
 
+.footer-padding {
+    padding-top: 1.5rem !important;
+    padding-bottom: 4.5rem !important;
+}
+
+@media (min-width: 992px) {
+    .footer-padding {
+        padding: 1.5rem !important;
+    }
+}
+
 
 /*--------------------------------------------------------------
 # Additional Styles
@@ -1631,4 +1664,10 @@ section {
 
 .table-body {
     font-size: 18px;
+}
+
+@media (min-width: 992px) {
+    .margin-top {
+        margin-top: 124px !important;
+    }
 }

@@ -1,5 +1,15 @@
 <x-client::layout>
 
+<!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex justify-content-center align-items-center">
+    <div class="container position-relative" data-aos="zoom-in" data-aos-delay="100">
+      <h1 class="text-capitalize">Transformasi digital<br>melalui keahlian Teknologi</h1>
+      <h2>Menjelajahi, Mencipta, Mendominasi !</h2>
+      <a href="courses.html" class="btn-get-started">Gabung Bersama Informatika UNBI</a>
+    </div>
+  </section>
+<!-- End Hero -->
+
 <!-- ======= About Section ======= -->
 <section id="about" class="about">
     <div class="container" data-aos="fade-up">
@@ -92,24 +102,7 @@
 
       <div class="row" data-aos="zoom-in" data-aos-delay="100">
 
-        <table class="table table-striped table-hover table-responsive">
-            <thead class="table-head">
-              <tr>
-                <th scope="col">Keterangan</th>
-                <th scope="col"></th>
-              </tr>
-            </thead>
-            <tbody class="table-body">
-              <tr>
-                <th scope="row">Dana Pembangunan</th>
-                <td>5.000.000</td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-              </tr>
-            </tbody>
-          </table>
+        <img src="{{ asset('client-assets/img/spp.jpeg') }}" alt="">
 
       </div>
 

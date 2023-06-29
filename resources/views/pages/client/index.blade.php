@@ -5,7 +5,7 @@
     <div class="container position-relative" data-aos="zoom-in" data-aos-delay="100">
       <h1 class="text-capitalize">Transformasi digital<br>melalui keahlian Teknologi</h1>
       <h2>Menjelajahi, Mencipta, Mendominasi !</h2>
-      <a href="courses.html" class="btn-get-started">Gabung Bersama Informatika UNBI</a>
+      <a href="{{ route('daftar') }}" class="btn-get-started">Gabung Bersama Informatika UNBI</a>
     </div>
   </section>
 <!-- End Hero -->
@@ -28,7 +28,7 @@
             Kita harus memiliki keahlian dan keterampilan profesional dalam bidang Informatika untuk sukses dalam karir.
             <b>Universitas Bali Internasional</b> telah membekali lulusan-lulusannya dengan keterampilan dan pengetahuan yang dibutuhkan untuk sukses berkarir di bidang IT.
           </p>
-          <a href="#" class="btn btn-warning button-content">Daftar Sekarang</a>
+          <a href="{{ route('daftar') }}" class="btn btn-warning button-content">Daftar Sekarang</a>
         </div>
       </div>
 

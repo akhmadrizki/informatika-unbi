@@ -22,6 +22,14 @@ Route::get('tentang-kami', function () {
     return view('pages.client.about');
 })->name('about');
 
+Route::get('kontak', function () {
+    return view('pages.client.contact');
+})->name('contact');
+
+Route::get('daftar', function () {
+    return view('pages.client.daftar');
+})->name('daftar');
+
 Auth::routes();
 
 Route::redirect('/home', '/admin/dashboard');

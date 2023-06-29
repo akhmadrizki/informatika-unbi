@@ -34,7 +34,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -1617,6 +1617,15 @@ section {
     font-weight: 400;
   }
 } */
+
+@supports (-webkit-text-stroke-width: 1px) {
+    .text-stroke {
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-color: #673ab7;
+        color: transparent;
+    }
+}
 
 .text-stroke {
     -webkit-text-stroke-width: 1px;

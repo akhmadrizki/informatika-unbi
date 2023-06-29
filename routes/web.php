@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Dashboard\StudentController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -15,7 +16,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('pages.client.index');
+    $image = \App\Models\Pricing::all();
+    return view('pages.client.index', compact('image'));
 })->name('index');
 
 Route::get('tentang-kami', function () {
@@ -29,6 +31,8 @@ Route::get('kontak', function () {
 Route::get('daftar', function () {
     return view('pages.client.daftar');
 })->name('daftar');
+
+Route::post('daftar', [StudentController::class, 'store'])->name('daftar.store');
 
 Auth::routes();
 

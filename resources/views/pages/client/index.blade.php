@@ -102,7 +102,7 @@
 
       <div class="row" data-aos="zoom-in" data-aos-delay="100">
 
-        <img src="{{ asset('client-assets/img/spp.jpeg') }}" alt="">
+        <img src="{{ asset('images/' . $image[0]->pricelist) }}" alt="">
 
       </div>
 

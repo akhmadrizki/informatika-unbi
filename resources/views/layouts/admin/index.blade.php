@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="{{ asset('dashboard-assets/modules/fontawesome/css/all.min.css') }}">
 
     <!-- CSS Libraries -->
+    <link rel="stylesheet" href="{{ asset('dashboard-assets/modules/datatables/datatables.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('dashboard-assets/modules/datatables/DataTables-1.10.16/css/dataTables.bootstrap4.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('dashboard-assets/modules/datatables/Select-1.2.4/css/select.bootstrap4.min.css') }}">
 
     <!-- Template CSS -->
     <link rel="stylesheet" href="{{ asset('dashboard-assets/css/style.css') }}">
@@ -58,8 +61,13 @@
     <script src="{{ asset('dashboard-assets/js/stisla.js') }}"></script>
 
     <!-- JS Libraies -->
+    <script src="{{ asset('dashboard-assets/modules/datatables/datatables.min.js')}}"></script>
+    <script src="{{ asset('dashboard-assets/modules/datatables/DataTables-1.10.16/js/dataTables.bootstrap4.min.js')}}"></script>
+    <script src="{{ asset('dashboard-assets/modules/datatables/Select-1.2.4/js/dataTables.select.min.js')}}"></script>
+    <script src="{{ asset('dashboard-assets/modules/jquery-ui/jquery-ui.min.js')}}"></script>
 
     <!-- Page Specific JS File -->
+    <script src="{{ asset('dashboard-assets/js/page/modules-datatables.js')}}"></script>
 
     <!-- Template JS File -->
     <script src="{{asset('dashboard-assets/js/scripts.js')}}"></script>

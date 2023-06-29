@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\Dashboard\DashboardController;
+use App\Http\Controllers\Dashboard\PricelistController;
+use App\Http\Controllers\Dashboard\StudentController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,4 +18,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::middleware('auth')->group(function () {
     Route::get('/dashboard', DashboardController::class)->name('dashboard');
+
+    Route::get('/pricelist', [PricelistController::class, 'index'])->name('pricelist.index');
+    Route::post('/pricelist', [PricelistController::class, 'store'])->name('pricelist.store');
+
+    Route::get('/student', [StudentController::class, 'index'])->name('student.index');
 });

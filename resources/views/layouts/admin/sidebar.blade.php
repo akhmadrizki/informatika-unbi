@@ -14,9 +14,15 @@
         </li>
 
         <li class="menu-header">Academic</li>
-        <li class="">
-            <a class="nav-link" href="#">
+        <li class="{{ Request::route()->getName() == 'admin.pricelist.index' ? 'active' : null }}">
+            <a class="nav-link" href="{{ route('admin.pricelist.index') }}">
                 <i class="fas fa-dollar-sign"></i> <span>Biaya Pendidikan</span>
+            </a>
+        </li>
+
+        <li class="{{ Request::route()->getName() == 'admin.student.index' ? 'active' : null }}">
+            <a class="nav-link" href="{{ route('admin.student.index') }}">
+                <i class="fas fa-user-friends"></i> <span>Pendaftar</span>
             </a>
         </li>
 

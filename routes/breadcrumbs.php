@@ -20,3 +20,18 @@ Breadcrumbs::for('admin.student.index', function (Generator $trail) {
     $trail->parent('admin.dashboard');
     $trail->push('Student', route('admin.student.index'));
 });
+
+Breadcrumbs::for('admin.news.index', function (Generator $trail) {
+    $trail->parent('admin.dashboard');
+    $trail->push('News', route('admin.news.index'));
+});
+
+Breadcrumbs::for('admin.news.create', function (Generator $trail) {
+    $trail->parent('admin.news.index');
+    $trail->push('Create', route('admin.news.create'));
+});
+
+Breadcrumbs::for('admin.news.edit', function (Generator $trail, $news) {
+    $trail->parent('admin.news.index');
+    $trail->push('Edit', route('admin.news.edit', $news));
+});

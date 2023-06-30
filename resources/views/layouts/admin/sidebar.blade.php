@@ -27,15 +27,9 @@
         </li>
 
         <li class="menu-header">Blog & News</li>
-        <li class="">
-            <a class="nav-link" href="#">
-                <i class="far fa-file-alt"></i> <span>Article</span>
-            </a>
-        </li>
-
-        <li class="">
-            <a class="nav-link" href="#">
-                <i class="far fa-newspaper"></i> <span>Berita</span>
+        <li class="{{ Request::route()->getName() == 'admin.news.index' ? 'active' : null }}">
+            <a class="nav-link" href="{{ route('admin.news.index') }}">
+                <i class="far fa-file-alt"></i> <span>Berita</span>
             </a>
         </li>
 

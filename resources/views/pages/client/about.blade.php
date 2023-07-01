@@ -51,4 +51,8 @@
 </section>
 <!-- End About Section -->
 
+<!-- ======= Popular Courses Section ======= -->
+@include('layouts.client.news', ['news' => $news])
+<!-- ======= End Popular Courses Section ======= -->
+
 </x-client>

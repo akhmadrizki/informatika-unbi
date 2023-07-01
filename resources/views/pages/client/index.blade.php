@@ -110,4 +110,8 @@
   </section>
   <!-- End biaya -->
 
+  <!-- ======= Popular Courses Section ======= -->
+  @include('layouts.client.news', ['news' => $news])
+  <!-- ======= End Popular Courses Section ======= -->
+
 </x-client>

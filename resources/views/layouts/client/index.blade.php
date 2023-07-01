@@ -45,10 +45,6 @@
 
   <main id="main">
     {{ $slot }}
-    <!-- ======= Popular Courses Section ======= -->
-        @include('layouts.client.news')
-    <!-- ======= End Popular Courses Section ======= -->
-
   </main>
   <!-- End #main -->
 

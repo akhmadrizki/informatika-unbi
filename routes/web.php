@@ -17,11 +17,14 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $image = \App\Models\Pricing::all();
-    return view('pages.client.index', compact('image'));
+    $news = \App\Models\News::latest()->take(3)->get();
+    return view('pages.client.index', compact('image', 'news'));
 })->name('index');
 
 Route::get('tentang-kami', function () {
-    return view('pages.client.about');
+    $news = \App\Models\News::latest()->take(3)->get();
+
+    return view('pages.client.about', compact('news'));
 })->name('about');
 
 Route::get('kontak', function () {
